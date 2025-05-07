@@ -1,0 +1,29 @@
+/* Define the CSS animation */
+@keyframes slideIn {
+    0% { transform: translateX(-100%); opacity: 0; }
+    100% { transform: translateX(0); opacity: 1; }
+}
+
+/* Styling for the button */
+.change-color {
+    padding: 10px 20px;
+    background-color: #2ecc71;
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.change-color:hover {
+    background-color: #27ae60;
+}
+
+/* Apply the slide-in animation */
+.slide-in {
+    animation: slideIn 1s ease-out;
+}
+
+.preferences {
+    margin-top: 20px;
+}
